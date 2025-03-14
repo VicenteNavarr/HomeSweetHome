@@ -19,10 +19,12 @@ public class Main extends Application{
     @Override
     public void start(Stage primaryStage) throws Exception {
         
-        Parent root = FXMLLoader.load(getClass().getResource("/homeSweetHome/view/PanelDeControl.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/homeSweetHome/view/MainView.fxml"));
         
-        primaryStage.setTitle("Prueba");
+        primaryStage.setTitle("Home, Sweet Home");
         primaryStage.setScene(new Scene(root));
+        primaryStage.setMinWidth(1280);
+        primaryStage.setMinHeight(768);
         primaryStage.show();
 
     }
